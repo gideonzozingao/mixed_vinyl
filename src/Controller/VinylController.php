@@ -14,7 +14,7 @@ class VinylController extends AbstractController
     #[Route("/")]
     public function homepage(): Response
     {
-        return new Response('Vinlye: Hello Vinyle');
+        return $this->render('vinyl/home.html.twig', ['title' => 'PB & Jams']);
     }
 
     // #[Route("/browse")]
